@@ -23,7 +23,11 @@ public class MouseSelector implements MouseListener {
     }
     @Override
     public void mouseClicked(MouseEvent e) {
-
+        // 00// 10
+        float[] init = PlaneConversion.toIso(0,0);
+        float[] f = PlaneConversion.toIso(0,1);
+        float[] s = PlaneConversion.toIso(1,0);
+        Coordinate.distance(init[0],init[1],f[0],f[1]);
     }
 
     @Override
